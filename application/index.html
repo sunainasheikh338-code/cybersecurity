@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cake Designs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f7;
+        }
+
+        header {
+            background-color: #ff4d6d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #ff8fa3;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ffccd5, #ffc2d1);
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #b3003c;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .btn {
+            background-color: #ff4d6d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cakes {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cake-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .cake-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .cake-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff4d6d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Hello World 🌍</h1>
-    <p>This is my first HTML page.</p>
+<header>
+    <h1>🍰 Sweet Cake Designs</h1>
+    <p>Custom Cakes for Every Occasion</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Order</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Delicious & Beautiful Cakes 🎂</h1>
+    <p>We design cakes for birthdays, weddings & special events</p>
+    <button class="btn" onclick="orderNow()">Order Now</button>
+</section>
+
+<section class="cakes">
+    <h2>Our Cake Designs</h2>
+
+    <div class="cake-container">
+
+        <div class="cake-card">
+            <img src="https://source.unsplash.com/250x200/?cake,chocolate" alt="Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and creamy chocolate delight</p>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://source.unsplash.com/250x200/?cake,birthday" alt="Cake">
+            <h3>Birthday Cake</h3>
+            <p>Perfect for celebrations 🎉</p>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://source.unsplash.com/250x200/?cake,wedding" alt="Cake">
+            <h3>Wedding Cake</h3>
+            <p>Elegant and customized designs</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sweet Cake Designs | Made with ❤️</p>
+</footer>
+
+<script>
+    function orderNow() {
+        alert("Contact us to place your order! 📞");
+    }
+</script>
 
 </body>
 </html>
